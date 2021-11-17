@@ -133,7 +133,7 @@ body {
   border: 3px solid navy;
 }
 .card-img-top-1 {
-  height: 200px;
+  height: 300px;
 }
 .card:hover {
   transform: scale(1.05);
