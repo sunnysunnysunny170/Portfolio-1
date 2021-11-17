@@ -1,0 +1,291 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #777777;
+}
+.nav-link:hover {
+  color: rgb(53, 141, 72) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-left: 20px;
+}
+.navbar-nav .nav-item {
+  padding-right: 30px;
+}
+.navbar {
+  font-size: 15px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.6) !important;
+  padding: 20px 0px;
+}
+.search-button-top {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(145, 91, 72) !important;
+  margin-left: 4px;
+}
+.search-button-top:hover {
+  background-color: cornflowerblue !important;
+}
+.heading-content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  max-width: 100%;
+  color: rgb(46, 117, 122);
+}
+.heading-content h5{
+  font-size: 4em;
+  font-weight: 300;
+}
+.heading-content h1{
+    font-size: 5em;
+    font-weight: bolder;
+}
+.heading-content p{
+    font-weight:lighter ;
+    font-size: 1em;
+    word-spacing: 5x;
+    letter-spacing: 2px;
+}
+
+#about .btn {
+  border: 2px solid rgb(65, 52, 52);
+  width: 30%;
+  padding: 15px 22px;
+  background-color: rgb(243, 200, 200);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+#about .btn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#about .btn:hover {
+  cursor: pointer;
+  border: 3px solid navy;
+}
+.card-img-top-1 {
+  height: 200px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card {
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px 10px 10px 10px;
+}
+.btn-1{
+    margin-top: 13px;
+}
+.buttonmore a{
+    color: rgb(190, 100, 100) !important;
+    text-decoration: none !important;
+}
+.buttonmore{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 5px 5px 5px;
+    margin-left: 220px;
+    justify-content:center;
+    text-decoration: none;
+}
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+/*
+   Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #0051ff;
+}
+#social-li:hover {
+    color: #004af7;
+    background-color: rgb(255, 254, 254);
+}
+#social-gi:hover {
+    color: #151920;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: rgb(210, 212, 40)}
+#social-ins:hover {
+    color: blueviolet}
+#social-yo:hover {
+    color: rgb(255, 0, 0)}
+
+.offset::before{
+    display: block;
+    height: 4rem;
+    content: "";
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+      letter-spacing: 0.1em;
+      padding: 10px 0px;
+    }
+   
+    .heading-content h1 {
+      font-size: 3em;
+    }
+    .heading-content h5 {
+      font-size: 3em;
+    }
+    .heading-content p {
+      font-size: 0.9em;
+    }
+
+  }
+@media screen and (max-width: 479px) {
+    .navbar {
+      letter-spacing: 0.1em;
+      padding: 7px 0px;
+    }
+    
+    .heading-content h1 {
+      font-size: 2em;
+    }
+    .heading-content h5 {
+      font-size: 2em;
+    }
+    .heading-content p {
+      font-size: 0.7em;
+    }
+
+  }
+@media screen and (max-width: 375px) {
+    .navbar {
+      letter-spacing: 0.1em;
+      padding: 7px 0px;
+    }
+    .heading-content {
+        position: absolute;
+        top: 10%;
+        
+      }
+    .heading-content h1 {
+      font-size: 2em;
+    }
+    .heading-content h5 {
+      font-size: 2em;
+    }
+    .heading-content p {
+      font-size: 0.7em;
+    }
+
+  }
+@media screen and (max-width: 411px) {
+    .navbar {
+      letter-spacing: 0.1em;
+      padding: 7px 0px;
+    }
+    .heading-content {
+        position: absolute;
+        top: 10%;
+        
+      }
+    .heading-content h1 {
+      font-size: 2em;
+    }
+    .heading-content h5 {
+      font-size: 2em;
+    }
+    .heading-content p {
+      font-size: 0.7em;
+    }
+
+  }
+  .contactus{
+    margin-top: -90px;
+  }
